@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Services - UFI Research</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/backtotop.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		
+		<!-- Default favicon (for browsers that don't support media queries in link tags) -->
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<!-- Light mode favicon -->
+		<link rel="icon" href="images/Logos/FAVICON_BLACK_192.png" type="image/x-icon" media="(prefers-color-scheme: light)">
+		<!-- Dark mode favicon -->
+		<link rel="icon" href="images/Logos/FAVICON_WHITE_192.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
+	</head>
+	<body>
+	
+	<button onclick="topFunction()" id="myBtn" title="Back To Top"><i class="fa-solid fa-angles-up" style="font-size: 2em"></i></button> 
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					
+					<div class="topnav" id="myTopnav">
+						<a href="https://www.ufi-research.com"><img src="images/Logos/UFI_RESEARCH_WHITE.svg" width="170px" height="auto"></a>
+						<div class="navbarright">
+						<a href="https://www.ufi-research.com">Home</a>
+						<a href="about.html">About</a>
+						<a href="ourteam.html">Our Team</a>
+						<a href="services.html" class="activepage">Services</a>
+						<a href="contact.html">Contact</a>
+						<a href="playtest.html">Playtest with us!</a>
+						</div>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+							<i class="fa-solid fa-bars"></i>
+						</a>
+					</div>
+					
+					<div class="topnavalt" id="myTopnavAlt" style="display: none">
+						<a href="https://www.ufi-research.com"><img src="images/Logos/UFI_RESEARCH_WHITE.svg" width="170px" height="auto"></a>
+						<a href="https://www.ufi-research.com">Home</a>
+						<a href="about.html">About</a>
+						<a href="ourteam.html">Our Team</a>
+						<a href="services.html"class="activepage">Services</a>
+						<a href="contact.html">Contact</a>
+						<a href="playtest.html">Playtest with us!</a>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+							<i class="fa-solid fa-bars"></i>
+						</a>
+					</div>
+
+				<!-- Main -->
+					<article id="secondary">
+					
+						<header>
+							<h2>Services Offered</h2>
+						</header>
+						
+						<section class="wrapper style5">
+						
+							<div class="inner">
+							
+							<div style="display: none;">
+								<h3 style="text-align: center; margin-top: -2em; margin-bottom: 3em">Standardized and custom solutions to meet your needs</h3>
+								<div class="box alt">
+									<div class="row uniform 50%">
+								
+										<div class="4u" style="text-align: center">
+											<i onclick="productionButtonLeft()" class="fa-solid fa-egg dragonhighlight"></i>
+											<p style="margin-bottom: 1em">PRE-PRODUCTION</p>
+											<div class="triangle-up" style="display: block" id="serviceArrowLeft"></div>
+										</div>
+									
+										<div class="4u" style="text-align: center">
+											<i onclick="productionButtonCenter()" class="fa-solid fa-kiwi-bird dragonhighlight"></i>
+											<p style="margin-bottom: 1em">PRODUCTION</p>
+											<div class="triangle-up" style="display: none" id="serviceArrowCenter"></div>
+										</div>
+									
+										<div class="4u" style="text-align: center">
+											<i onclick="productionButtonRight()" class="fa-solid fa-dragon dragonhighlight"></i>
+											<p style="margin-bottom: 1em">LAUNCH</p>
+											<div class="triangle-up" style="display: none" id="serviceArrowRight"></div>
+										</div>
+										<div class="12u">
+											<div class="stagepopup" style="display: block; margin-top: -1em" id="productionPopupLeft">
+											<p>We help you validate your early ideas and designs, so your development starts on the right foot.</p>
+											<p>Services in this phase:</p>
+												<ul>
+													<li>Concept Testing</li>
+													<li>Expert Analysis</li>
+												</ul>
+											</div>
+											<div class="stagepopup" style="margin-right:auto; margin-left: auto; display: none; margin-top: -1em" id="productionPopupCenter">
+												<p>As your project evolves, so should your understanding of the user experience. We work alongside your team to gather continuous insights.</p>
+												<p>Services in this phase:</p>
+												<ul>
+													<li>Usability Testing</li>
+													<li>Playtesting</li>
+												</ul>
+											</div>
+											<div class="stagepopup" style="margin-right: 0; margin-left: auto; display: none; margin-top: -1em" id="productionPopupRight">
+												<p>Ready to release? We help you uncover final issues, monitor early feedback, and identify your next round of improvements.</p>
+												<p>Services in this phase:</p>
+												<ul>
+													<li>Final Round Usability Testing</li>
+													<li>Final Round Playtesting</li>
+												</ul>
+											</div>
+											<br />
+											<br />
+											<div style="display: none;">
+												<h3 style="text-align: center;">Our Methods</h3>
+										
+												<!-- Tab links -->
+												<div class="tab">
+													<div class="tablinks active" onclick="openTest(event, 'Usability')">Usability</div>
+													<div class="tablinks" onclick="openTest(event, 'Playtesting')">Playtesting</div>
+													<div class="tablinks" onclick="openTest(event, 'ConceptTesting')">Concept Testing</div>
+													<div class="tablinks" onclick="openTest(event, 'ExpertAnalysis')">Expert Analysis</div>
+													<!-- <div class="tablinks" onclick="openTest(event, 'MoreTesting')">More</div> -->
+												</div>
+
+												<!-- Tab content -->
+												<div id="Usability" class="tabcontent" style="display: block">
+													<p>Focusing on user behavior, we identify roadblocks and provide insights that help improve usability, learnability and level up user experience.</p>
+												</div>
+												<div id="Playtesting" class="tabcontent">
+													<p>Test with real users to gather metrics, opinions, and perceptions of your product throughout development and after release.</p>
+												</div>
+												<div id="ConceptTesting" class="tabcontent">
+													<p>Validate concepts, explore ideas and learn about what your users need before your invest into a product.</p>
+												</div> 
+												<div id="ExpertAnalysis" class="tabcontent">
+													<p>Let our team of experts analyze you product to help identify issues that could impart your users.</p>
+												</div>
+<!-- 												<div id="MoreTesting" class="tabcontent">
+													<p><a href="contact.html">Contact us</a> for other options not listed</p>
+												</div>  -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+								<h3 id="toolkit" style="display: none; text-align: center; margin: 0 0 3em 0;">Our Toolkit</h3>
+							
+								<div class="servicesmatrix">
+									
+										<div class="grida1"><p>Our Methods</p></div>
+										<div class="gridb1"><div class="servtooltip"><p>Standardized Process</p><span class="servtooltiptext">Standardized evaluation process offering qualitative and quantitative metrics</span></div></div>
+										<div class="gridc1"><div class="servtooltip"><p>Custom Solutions</p><span class="servtooltiptext">Tailored to your needs and projects</span></div></div>
+										
+										<div class="grida2"><p><a href="#method1">Usability</a></p></div>
+										<div class="gridb2"><i class="fa-regular fa-circle-check"></i></div>
+										<div class="gridc2"><i class="fa-regular fa-circle-check"></i></div>
+										
+										<div class="grida3"><p><a href="#method2">Playtesting</a></p></div>
+										<div class="gridb3"><i class="fa-regular fa-circle-check"></i></div>
+										<div class="gridc3"><i class="fa-regular fa-circle-check"></i></div>
+										
+										<div class="grida4"><p><a href="#method3">Competitor Analysis</a></p></div>
+										<div class="gridb4"><i class="fa-regular fa-circle-check"></i></div>
+										<div class="gridc4"><i class="fa-regular fa-circle-check"></i></div>
+										
+										<div class="grida5"><p><a href="#method4">Expert Analysis</a></p></div>
+										<div class="gridb5"><i class="fa-regular fa-circle-check"></i></div>
+										<div class="gridc5"><i class="fa-regular fa-circle-check"></i></div>
+										
+										<div class="grida6"><p><a href="#method5">Diary Study</a></p></div>
+										<div class="gridb6"></div>
+										<div class="gridc6"><i class="fa-regular fa-circle-check"></i></div>
+										
+										<div class="grida7"><p><a href="#method6">Concept Testing</a></p></div>
+										<div class="gridb7"></div>
+										<div class="gridc7"><i class="fa-regular fa-circle-check"></i></div>
+										
+										<div class="grida8"><p><a href="#method7">Focus Groups</a></p></div>
+										<div class="gridb8"></div>
+										<div class="gridc8"><i class="fa-regular fa-circle-check"></i></div>
+									
+								</div>
+								
+								<h3 style="text-align: center; margin-top: 2em;">Looking for something more? Let our team know, we'd love to have a chat!</h3>
+								<div class="pagebottomcontact" style="margin-top: 2em; margin-bottom: 15em"><a href="contact.html" class="button special fit">Contact Us</a></div>
+								
+								
+								<div id="explainmethods"><h3 style="text-align: center; margin: 3em 0;">Methods Explained</h3></div>
+								<div class="toolkitflex">
+									<div id="method1" class="toolkitprose">
+										<div class="toolkitpadding">
+											<h3>Usability</h3>
+											<p>Focusing on user behavior, we identify roadblocks and provide insights that help improve usability, learnability and level up user experience.</p>
+										</div>
+									</div>
+									<div class="toolkitimage">
+										<img src="images/Office/Office05.jpg">
+									</div>
+								</div>
+								
+								<div class="toolkitflex">
+									<div class="toolkitimage">
+										<img src="images/Office/Office05.jpg">
+									</div>
+									<div id="method2" class="toolkitprose">
+										<div class="toolkitpadding">
+											<h3>Playtesting</h3>
+											<p>Test with real users to gather metrics, opinions, and perceptions of your product throughout development and after release.</p>
+										</div>
+									</div>
+									
+								</div>
+								
+								<div class="toolkitflex">
+									<div id="method3" class="toolkitprose">
+										<div class="toolkitpadding">
+											<h3>Competitor Analysis</h3>
+											<p>Placeholder</p>
+										</div>
+									</div>
+									<div class="toolkitimage">
+										<img src="images/Office/Office05.jpg">
+									</div>
+								</div>
+								
+								<div class="toolkitflex">
+									<div class="toolkitimage">
+										<img src="images/Office/Office05.jpg">
+									</div>
+									<div id="method4" class="toolkitprose">
+										<div class="toolkitpadding">
+											<h3>Expert Analysis</h3>
+											<p>Let our team of experts analyze you product to help identify issues that could impact your users</p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="toolkitflex">
+									<div id="method5" class="toolkitprose">
+										<div class="toolkitpadding">
+											<h3>Diary Study</h3>
+											<p>Placeholder</p>
+										</div>
+									</div>
+									<div class="toolkitimage">
+										<img src="images/Office/Office05.jpg">
+									</div>
+								</div>
+								
+								<div class="toolkitflex">
+									<div class="toolkitimage">
+										<img src="images/Office/Office05.jpg">
+									</div>
+									<div id="method6" class="toolkitprose">
+										<div class="toolkitpadding">
+											<h3>Concept Testing</h3>
+											<p>Validate concepts, explore ideas, and learn about what your users need before you invest into a product</p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="toolkitflex">
+									<div id="method7" class="toolkitprose">
+										<div class="toolkitpadding">
+											<h3>Focus Groups</h3>
+											<p>Placeholder</p>
+										</div>
+									</div>
+									<div class="toolkitimage">
+										<img src="images/Office/Office05.jpg">
+									</div>
+								</div>
+								
+							<h3 style="text-align: center; margin-top: 7em;">We care about your success, let's create an experience that your users won't forget!</h3>
+							<div class="pagebottomcontact" style="margin-top: 3em;"><a href="contact.html" class="button special fit">Contact Us</a></div>
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/company/userfirstresearch/" target="_blank" class="icon fa-brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="contact.html" class="icon fa fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>All Rights Reserved, User First Research, LLC</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/servicespage.js"></script>
+			<script src="assets/js/navbar.js"></script>
+			<script src="assets/js/backtotop.js"></script>
+
+	</body>
+</html>
