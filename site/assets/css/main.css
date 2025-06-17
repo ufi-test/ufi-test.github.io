@@ -4237,6 +4237,18 @@
 	padding: 0;
 }
 
+.inlineplaytestbutton {
+	background-color: #ef5e4a;
+	color: white;
+	border-radius: 3px;
+	border: none;
+	padding: 0 5px;
+}
+
+.inlineplaytestbutton:hover {
+	opacity: 0.9;
+}
+
 
 /* Footer Contact Button */
 
@@ -4532,7 +4544,7 @@
 	justify-content: center;
 }
 
-.standardserviceflexcontainer > div, .customserviceflexcontainer div {
+.standardserviceflexcontainer > div, .customserviceflexcontainer > div {
 	background-color: rgb(245, 245, 245);
 	flex: 1 1 32%;
 	border-radius: 3px;
@@ -4553,7 +4565,7 @@
 	border-color: #ef5e4a;
 }
 
-.customserviceflexcontainer div {
+.customserviceflexcontainer > div {
 	border-color: #817089;
 }
 
@@ -4593,6 +4605,69 @@
 	
 	.standardserviceflexcontainer > div, .customserviceflexcontainer div {
 		min-height: 150px;
+		max-width: 100%;
+	}
+}
+
+
+/* Homepage Cards */
+
+.homepagecardflexcontainer {
+	display: flex;
+	gap: 1em 2%;
+	margin: 0 0 1em 0;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.homepagecardflexcontainer > div {
+	background-color: rgb(245, 245, 245);
+	flex: 1 1 32%;
+	border-radius: 3px;
+	text-align: center;
+	padding: 1em 1em;
+	margin: 0;
+	border-style: solid;
+	border-width: 3px;
+	border-bottom-width: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 450px;
+	max-width: 32%;
+	/* border-color: #ef5e4a; */
+	border-color: #54bac1;
+}
+
+.homepagecardflexcontainer > div > p {
+	display: none;
+}
+
+.homepagecardflexcontainer > div > h3, .homepagecardflexcontainer > div > p {
+	padding: 0;
+	margin: 0;
+}
+
+#homeflex1:hover, #homeflex2:hover, #homeflex3:hover {
+	border-width: 10px 3px 3px 3px;
+	border-color: #87ebee;
+}
+	
+#homeflex1:hover > h3, #homeflex2:hover > h3, #homeflex3:hover > h3 {
+	display: none;
+}
+
+#homeflex1:hover > p, #homeflex2:hover > p, #homeflex3:hover > p {
+	display: block;
+}
+
+@media screen and (max-width: 900px) {
+	.homepagecardflexcontainer {
+		flex-flow: column nowrap;
+	}
+	
+	.homepagecardflexcontainer > div {
+		min-height: 215px;
 		max-width: 100%;
 	}
 }
