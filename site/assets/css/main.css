@@ -4801,6 +4801,87 @@
 }
 
 
+/* Alternative Cards */
+
+
+
+.altaboutusflexcontainer {
+	display: flex;
+	gap: 1em 2%;
+	margin: 0 0 1em 0;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.altaboutusflexcontainer > div {
+	position: relative;
+	background-color: rgb(245, 245, 245);
+	flex: 1 1 32%;
+	border-radius: 3px;
+	text-align: center;
+	padding: 1em 1em;
+	margin: 0;
+	border-style: solid;
+	border-width: 3px;
+	border-bottom-width: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 550px;
+	max-width: 32%;
+	border-color: #817089;
+}
+
+.altaboutusflexcontainer > div > img {
+	position: absolute;
+	opacity: 0.1;
+	width: 75%;
+	height: 75%;
+}
+
+#aboutflex1:hover > img, #aboutflex2:hover > img, #aboutflex3:hover > img, #aboutflex4:hover > img, #aboutflex5:hover > img, #aboutflex6:hover > img {
+	opacity: 0.05;
+}
+
+.altaboutusflexcontainer > div > p {
+	display: none;
+	text-align: left;
+}
+
+.altaboutusflexcontainer > div > h3, .altaboutusflexcontainer > div > p {
+	padding: 0;
+	margin: 0;
+}
+
+#aboutflex1:hover, #aboutflex2:hover, #aboutflex3:hover, #aboutflex4:hover, #aboutflex5:hover, #aboutflex6:hover {
+	border-width: 10px 3px 3px 3px;
+	border-color: #c0adc8;
+}
+	
+#aboutflex1:hover > h3, #aboutflex2:hover > h3, #aboutflex3:hover > h3, #aboutflex4:hover > h3, #aboutflex5:hover > h3, #aboutflex6:hover > h3 {
+	display: none;
+}
+
+#aboutflex1:hover > p, #aboutflex2:hover > p, #aboutflex3:hover > p, #aboutflex4:hover > p, #aboutflex5:hover > p, #aboutflex6:hover > p {
+	display: block;
+}
+
+@media screen and (max-width: 900px) {
+	.altaboutusflexcontainer {
+		flex-flow: column nowrap;
+	}
+	
+	.altaboutusflexcontainer > div {
+		min-height: 215px;
+		max-width: 100%;
+	}
+}
+
+
+
+
+
+
 /* Our Team Bubble Animation */
 
 .overlaycontainer {
