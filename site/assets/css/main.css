@@ -4897,7 +4897,62 @@
 }
 
 
+/* Clickable Alt About Boxes */
 
+.baltaboutusflexcontainer {
+	display: flex;
+	gap: 1em 2%;
+	margin: 0 0 1em 0;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.baltaboutusflexcontainer > div {
+	position: relative;
+	background-color: rgb(245, 245, 245);
+	flex: 1 1 32%;
+	border-radius: 3px;
+	text-align: center;
+	padding: 1em 1em;
+	margin: 0;
+	border-style: solid;
+	border-width: 3px;
+	border-bottom-width: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 550px;
+	max-width: 32%;
+	border-color: #817089;
+}
+
+.baltaboutusflexcontainer > div > img {
+	position: absolute;
+	opacity: 0.1;
+	width: 75%;
+	height: 75%;
+}
+
+.baltaboutusflexcontainer > div > p {
+	display: none;
+	text-align: left;
+}
+
+.baltaboutusflexcontainer > div > h3, .baltaboutusflexcontainer > div > p {
+	padding: 0;
+	margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+	.baltaboutusflexcontainer {
+		flex-flow: column nowrap;
+	}
+	
+	.baltaboutusflexcontainer > div {
+		min-height: 215px;
+		max-width: 100%;
+	}
+}
 
 
 
