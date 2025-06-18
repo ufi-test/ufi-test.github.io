@@ -3920,63 +3920,108 @@
 	
 /* Discord Playtest Button */
 
-	@media screen and (min-width: 1680px) {
-		.discordbutton {
-			margin-top: -2em;
-			max-width: 500px;
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 3em;
-		}
+.discordbutton {
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3em;
+}
+
+@media screen and (min-width: 1680px) {
+	.discordbutton {
+		margin-top: -2em;
 	}
-	@media screen and (max-width: 1680px) {
-		.discordbutton {
-			margin-top: -2em;
-			max-width: 500px;
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 3em;
-		}
+}
+@media screen and (max-width: 1680px) {
+	.discordbutton {
+		margin-top: -2em;
 	}
-	@media screen and (max-width: 1280px) {
-		.discordbutton {
-			margin-top: -2em;
-			max-width: 500px;
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 3em;
-		}
+}
+@media screen and (max-width: 1280px) {
+	.discordbutton {
+		margin-top: -2em;
 	}
-	@media screen and (max-width: 980px) {
-		.discordbutton {
-			max-width: 500px;
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 3em;
-		}
-	}
-	@media screen and (max-width: 736px) {
-		.discordbutton {
-			max-width: 500px;
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 3em;
-		}
-	}
-	@media screen and (max-width: 480px) {
-		.discordbutton {
-			max-width: 500px;
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 3em;
-		}
-	}
+}
+
 
 /* Playtest Page Hidden Section For Right Align Text */
 
 @media screen and (max-width: 736px) {
 	.smallhide {
 		display: none;
+	}
+}
+
+/* Playtest Page Cards */
+
+.playtestcardflexcontainer {
+	display: flex;
+	gap: 1em 2%;
+	margin: 0 0 6em 0;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.playtestcardflexcontainer > div > img {
+	position: absolute;
+	opacity: 0.1;
+	width: 75%;
+	height: 75%;
+}
+
+.playtestcardflexcontainer > div {
+	position: relative;
+	background-color: rgb(245, 245, 245);
+	flex: 1 1 32%;
+	border-radius: 3px;
+	text-align: center;
+	padding: 1em 1em;
+	margin: 0;
+	border-style: solid;
+	border-width: 3px;
+	border-bottom-width: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 300px;
+	max-width: 32%;
+	border-color: #817089;
+}
+
+.playtestcardflexcontainer > div > p {
+	display: none;
+}
+
+.playtestcardflexcontainer > div > h3, .playtestcardflexcontainer > div > p {
+	padding: 0;
+	margin: 0;
+}
+
+#playtestflex1:hover, #playtestflex2:hover, #playtestflex3:hover {
+	border-width: 10px 3px 3px 3px;
+	border-color: #c0adc8;
+}
+	
+#playtestflex1:hover > h3, #playtestflex2:hover > h3, #playtestflex3:hover > h3 {
+	display: none;
+}
+
+#playtestflex1:hover > p, #playtestflex2:hover > p, #playtestflex3:hover > p {
+	display: block;
+}
+
+#playtestflex1:hover > img, #playtestflex2:hover > img, #playtestflex3:hover > img {
+	opacity: 0.05;
+}
+
+@media screen and (max-width: 900px) {
+	.playtestcardflexcontainer {
+		flex-flow: column nowrap;
+	}
+	
+	.playtestcardflexcontainer > div {
+		min-height: 215px;
+		max-width: 100%;
 	}
 }
 
@@ -4621,6 +4666,7 @@
 }
 
 .homepagecardflexcontainer > div {
+	position: relative;
 	background-color: rgb(245, 245, 245);
 	flex: 1 1 32%;
 	border-radius: 3px;
@@ -4635,8 +4681,18 @@
 	justify-content: center;
 	min-height: 450px;
 	max-width: 32%;
-	/* border-color: #ef5e4a; */
-	border-color: #54bac1;
+	border-color: #817089;
+}
+
+.homepagecardflexcontainer > div > img {
+	position: absolute;
+	opacity: 0.1;
+	width: 75%;
+	height: 75%;
+}
+
+#homeflex1:hover > img, #homeflex2:hover > img, #homeflex3:hover > img {
+	opacity: 0.05;
 }
 
 .homepagecardflexcontainer > div > p {
@@ -4650,7 +4706,7 @@
 
 #homeflex1:hover, #homeflex2:hover, #homeflex3:hover {
 	border-width: 10px 3px 3px 3px;
-	border-color: #87ebee;
+	border-color: #c0adc8;
 }
 	
 #homeflex1:hover > h3, #homeflex2:hover > h3, #homeflex3:hover > h3 {
@@ -4670,6 +4726,17 @@
 		min-height: 215px;
 		max-width: 100%;
 	}
+}
+
+/* Homepage Blurb */
+
+.homepageblurb {
+	/* padding-left: 10em; */
+	/* text-align: center; */
+	/* margin-bottom: 6em; */
+	/* background-color: rgb(245, 245, 245); */
+	/* border-radius: 3px; */
+	/* padding: 1em; */
 }
 
 
