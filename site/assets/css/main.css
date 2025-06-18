@@ -4025,6 +4025,25 @@
 	}
 }
 
+
+/* Playtest FAQ Container */
+
+.playtestfaqflexcontainer {
+	display: flex;
+	justify-content: center;
+}
+
+.playtestfaqflexcontainer > div {
+	width: 85%;
+}
+
+@media screen and (max-width: 900px) {
+	.playtestfaqflexcontainer > div {
+		width: 100%;
+	}
+}
+
+
 /* Services Page */
 
 .dragonhighlight {
@@ -4801,7 +4820,7 @@
 }
 
 
-/* Alternative Cards */
+/* Alternative About Cards */
 
 
 
