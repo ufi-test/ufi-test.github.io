@@ -1,0 +1,3 @@
+Orange: #ef5e4a; lighter: #fd9577
+Purple: #817089; lighter: #c0adc8
+Teal: #54bac1; lighter: #87ebee
