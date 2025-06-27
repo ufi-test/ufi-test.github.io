@@ -4708,6 +4708,7 @@
 	opacity: 0.1;
 	width: 75%;
 	height: 75%;
+	max-height: 225px;
 }
 
 #homeflex1:hover > img, #homeflex2:hover > img, #homeflex3:hover > img {
@@ -4742,7 +4743,7 @@
 	}
 	
 	.homepagecardflexcontainer > div {
-		min-height: 215px;
+		min-height: 250px;
 		max-width: 100%;
 	}
 }
@@ -4814,9 +4815,11 @@
 	text-align: left;
 }
 
-.aboutusflexcontainer div p {
-	padding: 0;
-	margin: 0 0 1em 0;
+@media screen and (max-width: 900px) {
+
+	.aboutusflexcontainer  > div > h3 > br {
+		display: none;
+	}
 }
 
 
