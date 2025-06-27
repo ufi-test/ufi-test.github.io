@@ -5001,3 +5001,12 @@
 		max-width: 50%;
 	}
 }
+
+.mascot {
+	width: 150px;
+	height: auto;
+	position: absolute;
+	right: 5%;
+	bottom: -44px;
+	transform: scaleX(-1);
+}
