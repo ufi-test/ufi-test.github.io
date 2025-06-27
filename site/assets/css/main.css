@@ -5007,6 +5007,12 @@
 	height: auto;
 	position: absolute;
 	right: 5%;
-	bottom: -44px;
+	bottom: -85px;
 	transform: scaleX(-1);
+	transition: bottom 1s 500ms;
+}
+
+.mascot:hover {
+	bottom: 5px;
+
 }
