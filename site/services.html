@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/backtotop.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		
@@ -18,6 +17,8 @@
 		<link rel="icon" href="images/Logos/FAVICON_WHITE_192.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
 	</head>
 	<body>
+	
+	<div class="darkoverlay" onclick="overlayoff()"></div>
 	
 	<!-- <button onclick="topFunction()" id="myBtn" title="Back To Top"><i class="fa-solid fa-angles-up" style="font-size: 2em"></i></button>  -->
 
@@ -65,6 +66,31 @@
 						
 							<div class="inner">
 							
+							
+								<div style="position: relative;">
+									<div class="methodexplanation">
+										<div id="exp1">
+											<h3>Usability</h3><strong>How it Works:</strong> If you’re unsure where your usability issues lie, we conduct a deep dive into how users interact with your product. We observe their behavior to uncover friction points that could affect their ability to learn or use your product.<br style="margin-bottom: 2em;"/><strong>Why it Benefits You:</strong> You’ll get specific insights into areas where users struggle, helping you improve learnability and ensure smoother interactions. This ultimately enhances your product’s overall appeal and accessibility.
+										</div>
+										<div id="exp2">
+											<h3>Playtest</h3><strong>How it Works:</strong> Our team guides users through a selected portion of your game or product, gathering detailed feedback on their thoughts, emotions, and behavior as they interact with it.<br style="margin-bottom: 2em;"/><strong>Why it Benefits You:</strong> You’ll gain rich, user-centered feedback that highlights what players love, what frustrates them, and where the experience could be enhanced. It’s a great way to fine-tune the product before launch or make improvements after release.
+										</div>
+										<div id="exp3">
+											<h3>Expert Analysis</h3><strong>How it Works:</strong> Our team of expert researchers conduct an in-depth evaluation of your product’s user experience. We look for pain points and issues that might not be immediately obvious, drawing on years of industry knowledge and past experience.<br style="margin-bottom: 2em;"/><strong>Why it Benefits You:</strong> You’ll get expert-level insights into subtle usability issues that could be holding back your product’s potential. Our analysis often uncovers issues that teams miss, helping you make informed decisions.
+										</div>
+										<div id="exp4">
+											<h3>Diary Study</h3><strong>How it Works:</strong> We follow users over an extended period as they engage with your product in their natural environment. By documenting their experience over time, we uncover long-term usage patterns, challenges, and emotional responses.<br style="margin-bottom: 2em;"/><strong>Why it Benefits You:</strong> You’ll gain a comprehensive understanding of your product’s impact on users in the real world, revealing both immediate pain points and ongoing challenges. This deep insight helps you optimize your product for sustained success.
+										</div>
+										<div id="exp5">
+											<h3>Concept Testing</h3><strong>How it Works:</strong> Before committing to full development, we gather feedback from users on your product concept, prototype, or idea. Through structured testing and analysis, we gauge their initial reactions and identify areas for improvement.<br style="margin-bottom: 2em;"/><strong>Why it Benefits You:</strong> By testing your ideas early, you save time and resources by validating the core concept with real users. This ensures you’re on the right track before investing heavily in production.
+										</div>
+										<div id="exp6">
+											<h3>Focus Groups</h3><strong>How it Works:</strong> We bring together a diverse group of users to discuss and interact with your product, guided by researchers who ask insightful questions and observe key behaviors. This collaborative environment provides an abundance of qualitative data.<br style="margin-bottom: 2em;"/><strong>Why it Benefits You:</strong> Focus groups allow you to understand how users think and feel about your product in real-time. The discussions provide actionable insights into user motivations, preferences, and pain points, helping you refine the product for better engagement.
+										</div>
+									</div>
+								</div>
+							
+							
 								<div class="standardserviceheading">
 									<h3>Standardized Process</h3>
 									<p>Nice and Easy Insights</p>
@@ -86,6 +112,20 @@
 									<div id="customserv4"><h3>Diary Study</h3><p>Placeholder</p></div>
 									<div id="customserv5"><h3>Concept Testing</h3><p>Validate concepts, explore ideas, and learn about what your users need before you invest into a product</p></div>
 									<div id="customserv6"><h3>Focus Groups</h3><p>Placeholder</p></div>
+								</div>
+								
+								<div class="customserviceheading" style="background-color: #54c15e;">
+									<h3>Placeholder</h3>
+									<p>Slightly longer placeholder</p>
+								</div>
+								
+								<div class="buttonserviceflexcontainer">
+									<div id="buttonserv1"><h3>Usability</h3><p>Focusing on user behavior, we identify roadblocks and provide insights that help improve usability.</p><div class="innerservicebutton" onclick="overlayon('#buttonserv1')">Learn more!</div></div>
+									<div id="buttonserv2"><h3>Playtest</h3><p>Placeholder</p><div class="innerservicebutton" onclick="overlayon('#buttonserv2')">Learn more!</div></div>
+									<div id="buttonserv3"><h3>Expert Analysis</h3><p>Placeholder</p><div class="innerservicebutton" onclick="overlayon('#buttonserv3')">Learn more!</div></div>
+									<div id="buttonserv4"><h3>Diary Study</h3><p>Lets you see how your users interact with your product over time.</p><div class="innerservicebutton" onclick="overlayon('#buttonserv4')">Learn more!</div></div>
+									<div id="buttonserv5"><h3>Concept Testing</h3><p>Will people like my product?</p><div class="innerservicebutton" onclick="overlayon('#buttonserv5')">Learn more!</div></div>
+									<div id="buttonserv6"><h3>Focus Groups</h3><p>What do users think about my product?</p><div class="innerservicebutton" onclick="overlayon('#buttonserv6')">Learn more!</div></div>
 								</div>
 								
 								<div class="moreserviceheading">
@@ -126,6 +166,7 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/navbar.js"></script>
 			<script src="assets/js/servicetooltip.js"></script>
+			<script src="assets/js/serviceoverlay.js"></script>
 
 	</body>
 </html>
