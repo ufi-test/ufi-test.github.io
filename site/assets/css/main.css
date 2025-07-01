@@ -4679,6 +4679,154 @@
 	}
 }
 
+/* Dark Overlay on Clicking Service Learn More Button */
+
+.darkoverlay {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 9;
+	cursor: pointer;
+}
+
+.methodexplanation {
+	display: none;
+	z-index: 10;
+	background-color: rgb(245, 245, 245);
+	border-style: solid;
+	border-width: 10px 3px 3px 3px;
+	border-radius: 3px;
+	border-color: #73e581; 
+	position: absolute;
+	padding: 10px;
+}
+
+#exp1, #exp2, #exp3, #exp4, #exp5, #exp6 {
+	display: none;
+}
+
+@media screen and (max-width: 900px) {
+	.methodexplanation h3 {
+		text-align: center;
+	}
+	
+	.methodexplanation {
+		padding-top: 0;
+	}
+}
+
+/* Service Flex Boxes With Button Inside */
+
+.buttonserviceflexcontainer {
+	display: flex;
+	gap: 1em 2%;
+	margin: 0 0 1em 0;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.buttonserviceflexcontainer > div {
+	background-color: rgb(245, 245, 245);
+	flex: 1 1 32%;
+	border-radius: 3px;
+	text-align: center;
+	padding: 1em 1em;
+	margin: 0;
+	border-style: solid;
+	border-width: 3px;
+	border-bottom-width: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 225px;
+	max-width: 32%;
+	border-color: #54c15e; 
+	position: relative;
+}
+
+.buttonserviceflexcontainer > div > p {
+	display: none;
+	padding: 0;
+	margin: 0;
+}
+
+.buttonserviceflexcontainer > div > h3 {
+	padding: 0;
+	margin: 0;
+}
+
+#buttonserv1:hover, #buttonserv2:hover, #buttonserv3:hover, #buttonserv4:hover, #buttonserv5:hover, #buttonserv6:hover {
+	border-width: 10px 3px 3px 3px;
+}
+
+#buttonserv1:hover, #buttonserv2:hover, #buttonserv3:hover, #buttonserv4:hover, #buttonserv5:hover, #buttonserv6:hover {
+	border-color: #73e581;
+}
+	
+#buttonserv1:hover > h3, #buttonserv2:hover > h3, #buttonserv3:hover > h3, #buttonserv4:hover > h3, #buttonserv5:hover > h3, #buttonserv6:hover > h3 {
+	position: absolute;
+	top: 0;
+}
+
+#buttonserv1:hover > p, #buttonserv2:hover > p, #buttonserv3:hover > p, #buttonserv4:hover > p, #buttonserv5:hover > p, #buttonserv6:hover > p, #buttonserv1:hover > div, #buttonserv2:hover > div, #buttonserv3:hover > div, #buttonserv4:hover > div, #buttonserv5:hover > div, #buttonserv6:hover > div {
+	display: block;
+}
+
+.innerservicebutton {
+	position: absolute;
+	border-radius: 3px;
+	max-width: 250px;
+	max-height: 50px;
+	background-color: #54c15e;
+	color: white;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 7px 35px;
+	cursor: pointer;
+	display: none;
+	bottom: 5px;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 0.225em;
+	line-height: 16px;
+}
+
+.innerservicebutton:hover {
+	background-color: #73e581;
+}
+
+@media screen and (max-width: 900px) {
+	.buttonserviceflexcontainer {
+		flex-flow: column nowrap;
+	}
+		
+	.buttonserviceflexcontainer > div {
+		min-height: 150px;
+		max-width: 100%;
+	}
+		
+}
+
+@media screen and (max-width: 1680px) {
+	.innerservicebutton {
+		line-height: 14px;
+		font-size: 14px;
+	}
+}
+	
+@media screen and (max-width: 1280px) {
+	.innerservicebutton {
+		line-height: 13px;
+		font-size: 13px;
+	}
+}
+
 
 /* Homepage Cards */
 
@@ -5014,5 +5162,4 @@
 
 .mascot:hover {
 	bottom: 5px;
-
 }
