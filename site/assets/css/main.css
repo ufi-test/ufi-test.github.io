@@ -4576,109 +4576,6 @@
 }
 
 
-/* Services Flex Boxes */
-
-.standardserviceheading, .customserviceheading, .moreserviceheading {
-	width: 100%;
-	border-radius: 3px;
-	text-align: center;
-	padding: 0.5em 0;
-}
-
-.standardserviceheading {
-	background-color: #ef5e4a;
-	margin: 0 0 1em 0;
-}
-
-.customserviceheading {
-	background-color: #817089;
-	margin: 3em 0 1em 0;
-}
-
-.moreserviceheading {
-	background-color: #54bac1;
-	margin: 3em 0 1em 0;
-}
-
-.standardserviceheading p, .standardserviceheading h3, .customserviceheading p, .customserviceheading h3, .moreserviceheading p, .moreserviceheading h3  {
-	color: white !important;
-	margin: 0;
-	padding: 0;
-}
-
-.standardserviceflexcontainer, .customserviceflexcontainer {
-	display: flex;
-	gap: 1em 2%;
-	margin: 0 0 1em 0;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.standardserviceflexcontainer > div, .customserviceflexcontainer > div {
-	background-color: rgb(245, 245, 245);
-	flex: 1 1 32%;
-	border-radius: 3px;
-	text-align: center;
-	padding: 1em 1em;
-	margin: 0;
-	border-style: solid;
-	border-width: 3px;
-	border-bottom-width: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 225px;
-	max-width: 32%
-}
-
-.standardserviceflexcontainer > div {
-	border-color: #ef5e4a;
-}
-
-.customserviceflexcontainer > div {
-	border-color: #817089;
-}
-
-.standardserviceflexcontainer > div > p, .customserviceflexcontainer > div > p{
-	display: none;
-}
-
-.standardserviceflexcontainer > div > h3, .standardserviceflexcontainer > div > p, .customserviceflexcontainer > div > h3, .customserviceflexcontainer > div > p {
-	padding: 0;
-	margin: 0;
-}
-
-#standardserv1:hover, #standardserv2:hover, #standardserv3:hover, #customserv1:hover, #customserv2:hover, #customserv3:hover, #customserv4:hover, #customserv5:hover, #customserv6:hover {
-	border-width: 10px 3px 3px 3px;
-}
-
-#standardserv1:hover, #standardserv2:hover, #standardserv3:hover {
-	border-color: #fd9577;
-}
-
-#customserv1:hover, #customserv2:hover, #customserv3:hover, #customserv4:hover, #customserv5:hover, #customserv6:hover {
-	border-color: #c0adc8;
-}
-	
-#standardserv1:hover > h3, #standardserv2:hover > h3, #standardserv3:hover > h3, #customserv1:hover > h3, #customserv2:hover > h3, #customserv3:hover > h3, #customserv4:hover > h3, #customserv5:hover > h3, #customserv6:hover > h3 {
-	display: none;
-}
-
-#standardserv1:hover > p, #standardserv2:hover > p, #standardserv3:hover > p, #customserv1:hover > p, #customserv2:hover > p, #customserv3:hover > p, #customserv4:hover > p, #customserv5:hover > p, #customserv6:hover > p {
-	display: block;
-}
-
-@media screen and (max-width: 900px) {
-	.standardserviceflexcontainer, .customserviceflexcontainer {
-		flex-flow: column nowrap;
-	}
-	
-	.standardserviceflexcontainer > div, .customserviceflexcontainer div {
-		min-height: 150px;
-		max-width: 100%;
-	}
-}
-
 /* Dark Overlay on Clicking Service Learn More Button */
 
 .darkoverlay {
@@ -4705,11 +4602,18 @@
 	border-color: #73e581; 
 	position: absolute;
 	padding: 10px;
+	/* box-shadow: 0 0 20px 10px rgba(255,255,255,0.5); */
 }
 
-#exp1, #exp2, #exp3, #exp4, #exp5, #exp6 {
+.methodexplanation > div {
 	display: none;
+	padding: 1em;
 }
+
+.methodexplanation > div > br {
+	margin-bottom: 2em;
+}
+
 
 @media screen and (max-width: 900px) {
 	.methodexplanation h3 {
@@ -4723,7 +4627,32 @@
 
 /* Service Flex Boxes With Button Inside */
 
-.buttonserviceflexcontainer {
+.serviceheading {
+	width: 100%;
+	border-radius: 3px;
+	text-align: center;
+	padding: 0.5em 0;
+	margin: 0 0 1em 0;
+	background-color: #54bac1;
+	margin: 3em 0 1em 0;
+}
+
+.serviceheading > p, .serviceheading > h3 {
+	color: white !important;
+	margin: 0;
+	padding: 0;
+}
+
+.serviceheading.orange {
+	background-color: #ef5e4a;
+	margin: 0 0 1em 0;
+}
+
+.serviceheading.purple {
+	background-color: #817089;
+}
+
+.serviceflexcontainer {
 	display: flex;
 	gap: 1em 2%;
 	margin: 0 0 1em 0;
@@ -4731,7 +4660,7 @@
 	justify-content: center;
 }
 
-.buttonserviceflexcontainer > div {
+.serviceflexcontainer > div {
 	background-color: rgb(245, 245, 245);
 	flex: 1 1 32%;
 	border-radius: 3px;
@@ -4750,31 +4679,49 @@
 	position: relative;
 }
 
-.buttonserviceflexcontainer > div > p {
+.serviceflexcontainer.purple > div {
+	border-color: #817089;
+}
+
+.serviceflexcontainer.orange > div {
+	border-color: #ef5e4a;
+}
+
+.serviceflexcontainer > div > p {
 	display: none;
 	padding: 0;
 	margin: 0;
 }
 
-.buttonserviceflexcontainer > div > h3 {
+.serviceflexcontainer > div > h3 {
 	padding: 0;
 	margin: 0;
 }
 
-#buttonserv1:hover, #buttonserv2:hover, #buttonserv3:hover, #buttonserv4:hover, #buttonserv5:hover, #buttonserv6:hover {
+.serviceflexcontainer > div:hover {
 	border-width: 10px 3px 3px 3px;
+	border-color: #73e581;
+	padding: 1em 0;
 }
 
-#buttonserv1:hover, #buttonserv2:hover, #buttonserv3:hover, #buttonserv4:hover, #buttonserv5:hover, #buttonserv6:hover {
-	border-color: #73e581;
+.serviceflexcontainer.purple > div:hover {
+	border-color: #c0adc8;
 }
-	
-#buttonserv1:hover > h3, #buttonserv2:hover > h3, #buttonserv3:hover > h3, #buttonserv4:hover > h3, #buttonserv5:hover > h3, #buttonserv6:hover > h3 {
+
+.serviceflexcontainer.orange > div:hover {
+	border-color: #fd9577;
+}
+
+.serviceflexcontainer > div:hover > h3 {
 	position: absolute;
 	top: 0;
 }
 
-#buttonserv1:hover > p, #buttonserv2:hover > p, #buttonserv3:hover > p, #buttonserv4:hover > p, #buttonserv5:hover > p, #buttonserv6:hover > p, #buttonserv1:hover > div, #buttonserv2:hover > div, #buttonserv3:hover > div, #buttonserv4:hover > div, #buttonserv5:hover > div, #buttonserv6:hover > div {
+.serviceflexcontainer > div:hover > p {
+	margin: 0 1em;
+}
+
+.serviceflexcontainer > div:hover > p, .serviceflexcontainer > div:hover > div {
 	display: block;
 }
 
@@ -4797,16 +4744,32 @@
 	line-height: 16px;
 }
 
+.serviceflexcontainer.purple > div > .innerservicebutton {
+	background-color: #817089;
+}
+
+.serviceflexcontainer.purple > div > .innerservicebutton:hover {
+	background-color: #c0adc8;
+}
+
+.serviceflexcontainer.orange > div > .innerservicebutton {
+	background-color: #ef5e4a;
+}
+
+.serviceflexcontainer.orange > div > .innerservicebutton:hover {
+	background-color: #fd9577;
+}
+
 .innerservicebutton:hover {
 	background-color: #73e581;
 }
 
 @media screen and (max-width: 900px) {
-	.buttonserviceflexcontainer {
+	.serviceflexcontainer {
 		flex-flow: column nowrap;
 	}
 		
-	.buttonserviceflexcontainer > div {
+	.serviceflexcontainer > div {
 		min-height: 150px;
 		max-width: 100%;
 	}
@@ -4905,12 +4868,16 @@
 /* Homepage Blurb */
 
 .homepageblurb {
-	/* padding-left: 10em; */
-	/* text-align: center; */
-	/* margin-bottom: 6em; */
-	/* background-color: rgb(245, 245, 245); */
-	/* border-radius: 3px; */
-	/* padding: 1em; */
+	padding: 0;
+	margin: 0;
+}
+
+.homepageblurb > br {
+	margin-bottom: 1em;
+}
+
+h3.homepageblurb {
+	margin: 0 0 2em 0;
 }
 
 
