@@ -3944,6 +3944,38 @@
 }
 
 
+/* Discord Link */
+
+.discorddownload {
+	background-color: #5865F2;
+	padding: 0 5px 2px 5px;
+	border-radius: 3px;
+}
+
+.discorddownload:hover {
+	opacity: 75%;
+}
+
+.discorddownload > a {
+	border: none;
+	text-decoration: none;
+}
+
+.discorddownload > a:hover {
+	border: none;
+	text-decoration: none;
+}
+
+.discordlogoimage {
+	max-height: 1em;
+	width: auto;
+	display: inline-block;
+	vertical-align: sub;
+	padding: 0;
+	margin: 0;
+}
+
+
 /* Playtest Page Hidden Section For Right Align Text */
 
 @media screen and (max-width: 736px) {
@@ -4607,7 +4639,7 @@
 
 .methodexplanation > div {
 	display: none;
-	padding: 1em;
+	padding: 2em 4em;
 }
 
 .methodexplanation > div > br {
