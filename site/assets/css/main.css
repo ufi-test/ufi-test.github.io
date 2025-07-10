@@ -5214,3 +5214,17 @@ h3.homepageblurb {
 		flex: 2 1 100%;
 	}
 }
+
+.contactbelow {
+	display: none;
+}
+
+@media screen and (max-width: 900px) {
+	.contactright {
+		display: none;
+	}
+	
+	.contactbelow {
+		display: inline-block;
+	}
+}
