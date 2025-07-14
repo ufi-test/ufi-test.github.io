@@ -4838,6 +4838,10 @@
 	gap: 10px 1.5%;
 }
 
+.contactformflexcontainer textarea {
+	resize: vertical;
+}
+
 .contactformhalf {
 	flex: 1 1 49%;
 }
