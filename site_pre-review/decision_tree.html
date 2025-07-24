@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Getting Started - UFI Research</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/decision-tree.css" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<!-- Light mode favicon -->
+		<link rel="icon" href="images/Logos/FAVICON_BLACK_192.png" type="image/x-icon" media="(prefers-color-scheme: light)">
+		<!-- Dark mode favicon -->
+		<link rel="icon" href="images/Logos/FAVICON_WHITE_192.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
+		
+		<style>
+		
+		#tree li input {
+			
+		}
+		
+ 		/* ul {margin: 0;}
+				
+		#tree {background-color: red;}
+		
+		#tree > li > ul {background-color: lightblue;}
+		
+		#tree > li > ul > li > ul {background-color: pink;}
+		
+		.answer {background-color: orange;} */
+		</style>
+		
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					
+					<div class="topnav" id="myTopnav">
+						<a href="index.html"><img src="images/Logos/UFI_RESEARCH_WHITE.svg" width="170px" height="auto"></a>
+						<a href="index.html">Home</a>
+						<a href="about.html">About</a>
+						<a href="ourteam.html">Our Team</a>
+						<a href="services.html">Services</a>
+						<a href="contact.html">Contact</a>
+						<a href="playtest.html">Playtest With Us!</a>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa-solid fa-bars"></i></a>
+					</div>
+
+				<!-- Main -->
+					<article id="secondary">
+						<header>
+							<h2>Getting Started</h2>
+						</header>
+						<section class="wrapper style5" style="position: relative;">
+							<div class="inner">
+							
+							<div id="tree-container">
+								<div id="q-container">
+									<ul id="tree">
+									
+										<li>Do you have a working product/prototype?</li>
+										
+										<li class="firstone"><input class="yes" name="lvl1" type="radio">Yes
+										
+											<ul id="testg1" class="choices-collapsed">
+											
+												<li>What is your primary goal?</li>
+												
+												<li><input name="lvl2" type="radio">Understand user experience over time
+												
+													<ul class="choices-collapsed"><li class="answer">USE: DIARY STUDY [LINK TO DIARY STUDY]</li></ul>
+													
+												</li>
+												
+												<li><input name="lvl2" type="radio">Get general feedback and opinions from users
+												
+													<ul class="choices-collapsed"><li class="answer">USE: FOCUS GROUPS [LINK TO FOCUS GROUPS]</li></ul>
+												
+												</li>
+												
+												<li><input name="lvl2" type="radio">Evaluate usability and interface issues
+												
+													<ul class="choices-collapsed">
+													
+														<li><input name="lvl3" type="radio">Want qualitative insights?
+														
+															<ul class="choices-collapsed"><li class="answer">USE: USABILITY [LINK TO USABILITY]</li></ul>
+														
+														</li>
+														
+														<li><input name="lvl3" type="radio">Want quantitative insights or benchmarks?
+														
+															<ul class="choices-collapsed"><li class="answer">USE: USABILITY BENCHMARK [LINK TO USABILITY BENCHMARK]</li></ul>
+														
+														</li>
+														
+														<li><input name="lvl3" type="radio">Want expert-based diagnosis based on best practices?
+														
+															<ul class="choices-collapsed"><li class="answer">USE: EXPERT ANALYSIS [LINK TO EXPERT ANALYSIS]</li></ul>
+														
+														</li>
+													
+													</ul>
+												
+												</li>
+												
+												<li><input name="lvl2" type="radio">Test game feel, fun, or engagement
+												
+													<ul>
+													
+														<li><input name="lvl3" type="radio">Want qualitative player feedback on playability/fun?
+														
+															<ul class="choices-collapsed"><li class="answer">USE: PLAYTEST [LINK TO PLAYTEST]</li></ul>
+														
+														</li>
+														
+														<li><input name="lvl3" type="radio">Want measurable player experience data over time?
+														
+															<ul class="choices-collapsed"><li class="answer">USE: PLAYTEST BENCHMARK [LINK TO PLAYTEST BENCHMARK]</li></ul>
+														
+														</li>
+														
+														<li><input name="lvl3" type="radio">Want to compare user behavior or measure UX impact?
+														
+															<ul class="choices-collapsed"><li class="answer">USE: ANALYSIS BENCHMARK [LINK TO ANALYSIS BENCHMARK]</li></ul>
+														
+														</li>
+													
+													</ul>
+													
+												</li>
+												
+												<li><input name="lvl2" type="radio">Get expert evaluation without involving users
+												
+													<ul class="choices-collapsed"><li class="answer">USE: EXPERT ANALYSIS [LINK TO EXPERT ANALYSIS]</li></ul>
+												
+												</li>
+											
+											</ul>
+										
+										</li>
+										
+										<li><input name="lvl1" type="radio">No
+										
+											<ul class="choices-collapsed">
+											
+												<li>Do you have early concepts/ideas?</li>
+												
+												<li><input name="lvl2" type="radio">Yes
+												
+													<ul class="choices-collapsed"><li class="answer">USE: CONCEPT TESTING [LINK TO CONCEPT TESTING]</li></ul>
+													
+												</li>
+												
+												<li><input name="lvl2" type="radio">No
+												
+													<ul class="choices-collapsed">
+														<li class="answer">Wait until you have something to test</li>
+													</ul>
+													
+												</li>
+											
+											</ul>
+											
+										</li>
+										
+									</ul>
+								</div>
+							</div>
+							
+							
+<!-- 							<div class="choice1">
+								<h3>Do you have a working product/prototype?</h3>
+								<div id="c1Y" class="choicebutton"><div><div>Yes</div></div></div>
+								<div id="c1N" class="choicebutton"><div><div>No</div></div></div>
+							</div>
+							
+								<div class="choice1N">
+									<h3>Do you have early concepts/ideas?</h3>
+									<div id="c1NY" class="choicebutton"><div><div>Yes</div></div></div>
+									<div id="c1NN" class="choicebutton"><div><div>No</div></div></div>
+								</div>
+							
+									<div class="choice1NN">
+										<h3 style="color: green;">Wait until you have something to test</h3>
+									</div>
+							
+									<div class="choice1NY">
+										<h3 style="color: green;">USE: CONCEPT TESTING [LINK TO CONCEPT TESTING]</h3>
+									</div>
+							
+								<div class="choice1Y">
+									<h3>What is your primary goal?</h3>
+									<div class="choicebutton"><div><div>Understand user experience over time</div></div></div>
+									<div class="choicebutton"><div><div>Get general feedback and opinions from users</div></div></div>
+									<div class="choicebutton"><div><div>Evaluate usability and interface issues</div></div></div>
+									<div class="choicebutton"><div><div>Test game feel, fun, or engagement</div></div></div>
+									<div class="choicebutton"><div><div>Get expert evaluation without involving users</div></div></div>
+								</div> -->
+							
+							
+							<h3 class="h3bottomcontact">We care about your success, let's create an experience that your users won't forget!</h3>
+							<div class="pagebottomcontact"><a href="contact.html" class="button special fit">Contact Us</a></div>
+							</div>
+							<img class="mascot" src="images/sealy_color.svg">
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer" style="position: relative;">
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/company/userfirstresearch/" target="_blank" class="icon fa-brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="contact.html" class="icon fa fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>All Rights Reserved, User First Research, LLC</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/navbar.js"></script>
+			<script src="assets/js/decisiontree.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,9 @@
+Orange: #ef5e4a; lighter: #fd9577
+Purple: #817089; lighter: #c0adc8
+Teal: #54bac1; lighter: #87ebee
+
+Gradient:
+
+rgba(244,202,216,0.9)	Pink
+rgba(129,112,137,0.9)	Purple
+rgba(14,21,58,0.9)	Indigo
