@@ -4873,3 +4873,59 @@
 		display: inline-block;
 	}
 }
+
+
+/* About Us Rev 2 */
+
+.launchpadrocket {
+	max-height: 125px;
+	opacity: 0.1;
+	align-self: center;
+	margin-bottom: 1em;
+}
+
+@media screen and (max-width: 900px) {
+	.launchpadrocket {
+		max-height: 75px;
+	}
+}
+
+
+/* Homepage Rev 2 */
+
+.homevertflexcontainer {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 100px;
+}
+
+.homevertinnerflexcontainer {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 100px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.homevertinnerflexcontainer > img, .homevertinnerflexcontainer > div, .homevertinnerflexcontainer > div > p {
+	margin: 0;
+	padding: 0;
+}
+
+.homevertinnerflexcontainer br {
+	margin-bottom: 0.5em;
+}
+
+.divimage > img {
+	height: auto;
+	width: 100%;
+}
+
+.homevertinnerflexcontainer > .divimage {
+	opacity: 0.25;
+	flex: 1 1 0;
+}
+
+.homevertinnerflexcontainer > .divdiv {
+	flex: 7 7 0;
+}
