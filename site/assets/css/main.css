@@ -4515,11 +4515,17 @@
 /* Homepage Cards */
 
 .homepagecardflexcontainer {
-	display: flex;
+	display: none;
 	gap: 1em 2%;
 	margin: 0 0 1em 0;
 	flex-wrap: wrap;
 	justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+	.homepagecardflexcontainer {
+		display: flex;
+	}
 }
 
 .homepagecardflexcontainer > div {
@@ -4890,6 +4896,18 @@
 	}
 }
 
+.launchpadblurb {
+	position: relative;
+	display: flex;
+	flex-flow: column wrap;
+	background-color: rgb(245, 245, 245);
+	border-radius: 15px;
+	border-style: solid;
+	border-color: #817089;
+	border-width: 3px;
+	padding: 30px;
+	margin: 100px 0;
+}
 
 /* Homepage Rev 2 */
 
@@ -4897,6 +4915,7 @@
 	display: flex;
 	flex-flow: column nowrap;
 	gap: 100px;
+	margin-top: 100px;
 }
 
 .homevertinnerflexcontainer {
@@ -4929,3 +4948,77 @@
 .homevertinnerflexcontainer > .divdiv {
 	flex: 7 7 0;
 }
+
+@media screen and (max-width: 900px) {
+	.homevertflexcontainer {
+		display: none;
+	}
+}
+
+
+/* Services */
+
+/* Services Matrix */
+
+.servicegrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+		"a1 b1 c1"
+		"a2 b2 c2"
+		"a3 b3 c3"
+		"a4 b4 c4"
+		"a5 b5 c5"
+		"a6 b6 c6"
+		"a7 b7 c7"
+		"a8 b8 c8"
+		"a9 b9 c9";
+}
+
+.servicegrid > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.servicegridb1, .servicegridb2, .servicegridb3, .servicegridb4, .servicegridb5, .servicegridb6, .servicegridb7, .servicegridb8, .servicegridb9 {
+	background-color: #ef5e4a;
+	color: white;
+}
+
+.servicegrida1, .servicegrida2, .servicegrida3, .servicegrida4, .servicegrida5, .servicegrida6, .servicegrida7, .servicegrida8, .servicegrida9, .servicegridc1, .servicegridc2, .servicegridc3, .servicegridc4, .servicegridc5, .servicegridc6, .servicegridc7, .servicegridc8, .servicegridc9 {
+	background-color: rgb(245, 245, 245);
+}
+
+.servicegrida2, .servicegrida3, .servicegrida4, .servicegrida5, .servicegrida6, .servicegrida7, .servicegrida8, .servicegridb2, .servicegridb3, .servicegridb4, .servicegridb5, .servicegridb6, .servicegridb7, .servicegridb8, .servicegridc2, .servicegridc3, .servicegridc4, .servicegridc5, .servicegridc6, .servicegridc7, .servicegridc8 {
+	border-style: solid;
+	border-width: 0 0 1px 0;
+	border-color: rgba(0,0,0,0.25);
+}
+
+.servicegrida1, .servicegridb1, .servicegridc1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	border-style: solid;
+	border-width: 0 0 2px 0;
+	border-color: rgba(0,0,0,0.5);
+}
+
+.servicegrida1 {
+	border-radius: 3px 0 0 0;
+}
+
+.servicegridc1 {
+	border-radius: 0 3px 0 0;
+}
+
+.servicegrida9 {
+	border-radius: 0 0 0 3px;
+}
+
+.servicegridc9 {
+	border-radius: 0 0 3px 0;
+}
+
