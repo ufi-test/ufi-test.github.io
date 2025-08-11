@@ -2736,6 +2736,11 @@
 		min-height: 250px;
 		max-width: 100%;
 	}
+	
+	.homepagecardflexcontainer > div > h3 {
+		font-size: 1.5em;
+		line-height: 1.5em;
+	}
 }
 
 /* Home Page Blocks */
@@ -2789,7 +2794,9 @@
 					/* +++ About +++ */
 					/* +++       +++ */
 
-/* About Us Page Cards */
+
+
+/* About Us Sections Headings */
 
 .aboutusheading {
 	width: 100%;
@@ -2805,6 +2812,9 @@
 	margin: 0;
 	padding: 0;
 }
+
+
+/* About Us Page Cards */
 
 .aboutusflexcontainer {
 	display: flex;
@@ -2847,7 +2857,35 @@
 	
 	.aboutusflexcontainer > div {
 		max-width: 100%;
-		min-height: 0;
+		min-height: 250px;
+		align-items: center;
+	}
+	
+	.aboutusflexcontainer > div:hover {
+		border-width: 10px 3px 3px 3px;
+		border-color: #c0adc8;
+	}
+	
+	.aboutusflexcontainer > div > div > h3 {
+		font-size: 1.5em;
+		line-height: 1.5em;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.aboutusflexcontainer > div > div > p {
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.aboutusflexcontainer > div:hover > div > p {
+		display: block;
+		text-align: center;
+	}
+	
+	.aboutusflexcontainer > div:hover > div > h3 {
+		display: none;
 	}
 	
 }
@@ -2865,6 +2903,45 @@
 	}
 }
 
+
+/* Our Team Border */
+
+@media screen and (max-width: 900px) {
+	.ourteamborder {
+		background-color: rgb(245, 245, 245);
+		border-radius: 15px;
+		border-style: solid;
+		border-color: #817089;
+		border-width: 3px;
+		padding: 15px 0;
+		margin: 100px 0;
+	}
+}
+
+
+/* Team Title and Subheading */
+
+.teamtitle {
+	text-align: center;
+	font-size: 1.75em;
+	line-height: 1.75em;
+	margin-top: 3em;
+}
+
+.teamsubheading {
+	text-align: center;
+	margin-bottom: 3em
+}
+
+@media screen and (max-width: 900px) {
+	.teamtitle {
+		margin-top: 0;
+	}
+	
+	.teamsubheading {
+		padding: 0 15px;
+	}
+}
 
 /* Our Team Bubble Animation */
 
@@ -2968,6 +3045,7 @@
 
 /* Launchpad */
 
+
 .launchpadrocket {
 	max-height: 125px;
 	opacity: 0.1;
@@ -2993,6 +3071,17 @@
 	padding: 30px;
 	margin: 100px 0;
 }
+
+.launchpadblurb > h2 {
+	text-align: center;
+	font-size: 1.75em;
+	line-height: 1.75em;
+}
+
+.launchpadblurb > p {
+	margin: 0;
+}
+
 
 
 					/* +++          +++ */
