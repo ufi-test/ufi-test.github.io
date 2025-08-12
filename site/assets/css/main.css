@@ -3338,6 +3338,16 @@
 		min-height: 215px;
 		max-width: 100%;
 	}
+	
+	.playtestcardflexcontainer > div > h3 {
+		font-size: 1.5em;
+		line-height: 1.5em;
+	}
+	
+	.playtestcardflexcontainer > div > p {
+		font-size: 1.4em;
+		line-height: 1.6em;
+	}
 }
 
 
